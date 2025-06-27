@@ -1,128 +1,58 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="style.css" />
-
-  <title>purecompizza</title>
+  <meta charset="UTF-8">
+  <title>Soundboard Personalizado</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="inicio">
-    <div class="interface">
-      <div class="logo">
-        <a href="#"><img src="" alt="" /></a>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#feitos">Historia</a></li>
-          <li><a href="#Series">Series</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="topo-do-site">
-      <div class="interface">
-        <div class="texto-topo">
-          <h1>ISSO É UMA TENTATIVA PORTFÓLIO</h1>
-          <p>Isso aqui é só uma mera tentativa do aluno Juan Erick, por favor tenha paciência.</p>
-        </div>
-
-        <div class="img-topo-site">
-          <img src="https://th.bing.com/th/id/OIP.8s4V2lONM-2mJueksDZibQHaMS?rs=1&pid=ImgDetMain" width="300" height="200" />
-        </div>
-      </div>
-    </section>
-
-    <section id="sobre" class="sobre">
-      <h2 class="titulo">SOBRE MIM</h2>
-      <div class="interface">
-        <div class="flex">
-          <div class="sobre-box">
-            <i class="bi bi-chat-text"></i>
-            <h3>Um aluno de poucas ideias</h3>
-            <p>Eu não tenho a mínima noção do que falar, criatividade tá poucas.</p>
-          </div>
-          <div class="sobre-box">
-            <i class="bi bi-cash"></i>
-            <h3>Eu gosto de dinheiro</h3>
-            <p>Se tiver uma grana sobrando por favor mande para o pix: Juanerickfs2@gmail.com.</p>
-          </div>
-          <div class="sobre-box">
-            <i class="bi bi-cup-hot-fill"></i>
-            <h3>Um cara tranquilo</h3>
-            <p>Só quero ficar na minha sem fazer muita coisa ou chamar atenção.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="feitos" class="feitos">
-      <div class="interface">       
-        <div class="txt-feitos">
-
-          <h2>Um breve depoimento sobre minha vida escolar</h2>
-
-          <p>Entrei na ETE com uma única coisa em mente: "lá tem escondidinho e feijoada". A escola acabou provando ser mais que isso... tem coxa de frango de qualidade e pirão aleatório. Nunca soube a senha do meu Siepe, então tô desde o começo sem acessar.</p>
-
-        </div>
-
-      </div>
-
-    </section>
-    
-   <section  id="Series" class="Serie"> 
-    <div class="favortia">
-        <h2 class="titulo">SÉRIES FAVORITAS</h2>
-      <div class="flex">
-         <div class="img-port" style="background-image: url('https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2023/06/One-Piece-106-manga.jpg?resize=1280%2C2032&quality=80&ssl=1');">
-           <div class="overlay">One Piece</div>           
-         </div>
-<div class="img-port" style="background-image: url('https://th.bing.com/th/id/OIP.UMNVDxOIlX0ve57TPjWiqQHaLn?w=199&h=313&c=7&r=0&o=5&dpr=1.1&pid=1.7');">
-   <div class="overlay">Chainsaw Man</div> 
-</div>
-        <div class="img-port" style="background-image: url('https://i1.wp.com/blogbbm.com/wp-content/uploads/2019/11/stardust-crusaders-02.jpg?fit=702%2C1024&ssl=1');">
-           <div class="overlay">Jojo bizarre Adventure</div> 
-        </div>
-    </div>
+  <div class="grid">
+    <button style="background-color: #FF6B6B;" onclick="tocarSom('cortapescoco.mp3')">Cut-Throat</button>
+    <button style="background-color: #FFD93D;" onclick="tocarSom('omatador.mp3')">O Matador</button>
+    <button style="background-color: #6BCB77;" onclick="tocarSom('danceofknights.mp3')">Dance Of Knights</button>
+    <button style="background-color: #4D96FF;" onclick="tocarSom('srozzy.mp3')">Sr Ozzy</button>
+    <button style="background-color: #843b62;" onclick="tocarSom('sinfonia5.mp3')">Symphony n5</button>
+    <button style="background-color: #ff914d;" onclick="tocarSom('tocata.mp3')">Tocata and Fugue</button>
   </div>
-      </div>
-    </div>
-    </section>
-   <section id="contato"class="formulario">
-       <div class="interface">
-           <h2 class="titulo">FALA <span>
-               AÍ 
-           </span>
-           </h2>
-           <form action="">
-              
-              <input type="text"name=""id=""placeholder="Seu nome, Adjaison:" required>
-               
-               <input type="text"name=""id=""placeholder="Seu número, Adjaison:">
-               <input type="text"name=""id=""placeholder="Seu email, Adjaison:"required>
-               <textarea name="" id="" placeholder="o que você tem a dizer" required ></textarea>
-               <div class="btn-enviar">
-                   <input type="submit" value="ENVIAR">
-               </div>
-           </form>
-       </div>
-   </section>
-  </main>
 
-  <a href="#inicio" id="topo"><i class="bi bi-chevron-bar-up"></i></a>
+  <script>
+    let audioAtual = null;
+    let fadeInterval = null;
+    let fadeTimeout = null;
 
+    function tocarSom(nomeArquivo) {
+      // Cancela fades e reseta som atual
+      if (fadeInterval) clearInterval(fadeInterval);
+      if (fadeTimeout) clearTimeout(fadeTimeout);
+      if (audioAtual) {
+        audioAtual.pause();
+        audioAtual.currentTime = 0;
+      }
+
+      // Cria novo som
+      audioAtual = new Audio(nomeArquivo);
+      audioAtual.volume = 1;
+      audioAtual.play();
+
+      // Inicia fade após 20 segundos
+      fadeTimeout = setTimeout(() => {
+        iniciarFadeOut(audioAtual);
+      }, 20000);
+    }
+
+    function iniciarFadeOut(audio) {
+      fadeInterval = setInterval(() => {
+        if (audio.volume > 0.02) {
+          audio.volume -= 0.02;
+        } else {
+          clearInterval(fadeInterval);
+          audio.pause();
+          audio.currentTime = 0;
+          audio.volume = 1;
+        }
+      }, 100);
+    }
+  </script>
 </body>
-
 </html>
